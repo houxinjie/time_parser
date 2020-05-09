@@ -1,0 +1,16 @@
+{
+  "name": "time_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {},
+  "devDependencies": {
+    "antlr4": "^4.8.0"
+  },
+  "scripts": {
+    "build": "cd lib && antlr -Dlanguage=JavaScript  -o Time -visitor -no-listener Time.g4 && cd ..",
+    "test": "node test.js"
+  },
+  "author": "houxinjie",
+  "license": "ISC"
+}
